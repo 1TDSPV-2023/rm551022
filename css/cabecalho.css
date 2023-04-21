@@ -7,9 +7,10 @@
 }
 
 .cabecalho img{
-    width: 30%;
-    max-width: 30%;
-    display: block;
+    width: 10%;
+    max-width: 10%;
+    display:flex;
+    
 }
 
 .cabecalho nav{
