@@ -16,12 +16,12 @@
         <nav>
             <a href="#">Home</a>
             <a href="#">Sobre mim</a>
-            <a href="#">Formulario</a>
+            <a href="./action-fake.html">Formulario</a>
         </nav>
     </header>
 
     <h2 class="tit-sec">Seção Foto</h2>
-
+    
     <section class="conteudo">
         <div>
             <img src="./img/lobo1.jpg" alt="Lobo">
@@ -58,12 +58,12 @@
         </nav>
 
         <div>
-            <form action="./index.html" method="GET" onsubmit="return false">
+            <form action="./action-fake.html" method="POST" onsubmit="return false">
                 <fieldset>
                     <legend>Contato</legend>
                     <div>
                         <label for="idNm">Nome</label>
-                        <input type="text" name="txtNm" id="idNm" placeholder="Nome">
+                        <input type="text" name="txtNm" id="idNm" placeholder="Nome" value="Fernando"> 
 
                     </div>
                     <div>
@@ -81,6 +81,10 @@
             </form>
         </div>
     </footer>
+    <script>
+        var nr1 = 10;
+        var nr2 = 5;
+    </script>
 
 </body>
 
