@@ -1,5 +1,6 @@
 "use strict";
 
+//CRIANDO OBJETOS
 const usuario1 = {
     nomeUsuario : "rita-lee",
     senhaUsuario : "00000"
@@ -10,29 +11,34 @@ const usuario2 = {
     senhaUsuario : "12345"
 }
 
-console.log(usuario1.nomeUsuario)
-console.log(usuario2.nomeUsuario)
-usuario2.nomeUsuario = "Juquinha";
-
-let listaDeUsuarios =  [];
-listaDeUsuarios.push(usuario1)
-listaDeUsuarios.push(usuario2)
+//LISTA DE USUÁRIOS
+let listaDeUsuarios = [];
+listaDeUsuarios.push(usuario1);
+listaDeUsuarios.push(usuario2);
 
 addEventListener("click", (evento)=>{
+     
+    let userInput = document.querySelector("#idUser"); 
+    let passInput = document.querySelector("#idPass"); 
 
-    let userInput = document.querySelector("#idUser");
-    let passInput = document.querySelector("#idPass");
-    
-    //console.log(evento.target);
-    if(evento.target.id == "btnSubmit"){
-        if(userInput.value == "rm551022" && passInput.value == "12345"){
+        if(evento.target.id == "btnSubmit"){
+        
+        try{
+                listaDeUsuarios.forEach((usuario)=>{
 
-            console.log("USUARIO VALIDADO");
+                    if(userInput.value == usuario.nomeUsuario && passInput.value == usuario.senhaUsuario){
+                        throw "USUÁRIO VALIDADO!";
+                    }else{
+                        throw "USUÁRIO OU SENHA INCORRETOS!";
+                    }
+                });
+    }catch(err){
+        if(err == "USUÁRIO VALIDADO!"){
+            console.log("USUÁRIO VALIDADO!")
         }else{
-            console.log("USUARIO OU SENHA INCORRETA");
+            console.log("USUÁRIO OU SENHA INCORRETOS!");
         }
-
-
     }
 
+        }
 });
