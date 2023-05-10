@@ -28,10 +28,12 @@ addEventListener("click", (evento)=>{
 
                     if(userInput.value == usuario.nomeUsuario && passInput.value == usuario.senhaUsuario){
                         throw "USUÁRIO VALIDADO!";
-                    }else{
-                        throw "USUÁRIO OU SENHA INCORRETOS!";
+                    
+                        
                     }
                 });
+
+                throw "USUÁRIO OU SENHA INCORRETOS!";
     }catch(err){
         if(err == "USUÁRIO VALIDADO!"){
             console.log("USUÁRIO VALIDADO!")
