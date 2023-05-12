@@ -1,0 +1,38 @@
+
+
+.calc{
+    
+    background-color: rgb(0, 171, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-calc{
+    background-color: rgb(0, 17, 255);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.btn-calc button{
+    background-color: rgb(0, 17, 255);
+    margin: 4% 0;
+    flex-grow:  2;
+}
+
+.result-calc{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result-calc button{
+    margin: 4% 0;
+    flex-grow: 1;
+}
+
+.div oper-calc {
+    margin: 4% 0;
+    flex-grow:  2;
+};

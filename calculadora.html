@@ -14,7 +14,28 @@
 
     <div class="calc">
         <form action="" method="get" onsubmit="return false">
-            
+            <div class="visor-calc">
+                <input type="text" name="visor" id="idVisor" placeholder="0">
+            </div>
+            <div class="btn-calc">
+                <button value="1" id="btn-1" onclick="inserenNumeroNoVisor(this, idVisor)">1</button>
+                <button value="2" id="btn-3" onclick="inserenNumeroNoVisor(this, idVisor)">2</button>
+                <button value="3" id="btn-3" onclick="inserenNumeroNoVisor(this, idVisor)">3</button>
+
+            </div>
+
+            <div class="oper-calc">
+                <button value="+" id="btnSoma" onclick="inserenNumeroNoVisor(this, idVisor)">+</button>
+                <button value="-" id="btnSubtracao" onclick="inserenNumeroNoVisor(this, idVisor)">-</button>
+                <button value="*" id="btnMultiplicacao" onclick="inserenNumeroNoVisor(this, idVisor)">x</button>
+                <button value="/" id="btnDivisao" onclick="inserenNumeroNoVisor(this, idVisor)">/</button>
+
+            </div>
+
+            <div class="result-calc">
+                <button value="=" id="btnResult" onclick="resultadoDasOperacoes(idVisor)">=</button>
+
+            </div>
         </form>
     </div>
     
